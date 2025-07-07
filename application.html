@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Arcadia - Application</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #1e1e2f;
+      color: #f4f1e9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e2e4f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #a98c5f;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      font-family: 'Cinzel', serif;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #3e3e5f;
+      padding: 10px 0;
+    }
+    .btn-nav {
+      background-image: url('button.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 180px;
+      height: 60px;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      line-height: 60px;
+      margin: 0 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-nav:hover {
+      filter: brightness(1.1);
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #2a2a3e;
+      border: 2px solid #a98c5f;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00000088;
+    }
+    h2 {
+      font-family: 'Cinzel', serif;
+      color: #e6c17c;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #3c3c5c;
+      color: white;
+    }
+    form button {
+      margin-top: 20px;
+      background-color: #5865F2;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .discord-btn {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .discord-btn a {
+      display: inline-block;
+      background-color: #5865F2;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .discord-btn a:hover {
+      background-color: #4752c4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Team Arcadia - Apply Now</h1>
+  </header>
+
+  <nav>
+    <a href="index.html" class="btn-nav">HOME</a>
+    <a href="members.html" class="btn-nav">MEMBERS</a>
+    <a href="application.html" class="btn-nav">APPLY</a>
+  </nav>
+
+  <section>
+    <h2>🏰 Team Arcadia Recruitment Form ⚔️</h2>
+    <p>Welcome to the official application form for Team Arcadia on the Arcane Realms server!</p>
+    <p>We're looking for skilled fighters, creative builders, and dedicated resource gatherers who are passionate about Minecraft and ready to contribute to our team's growth and success.</p>
+    <p>⚠️ Note: Make sure you’re part of our Discord server before applying – all communication happens there!</p>
+    <p><em>Let’s rise together. 🌿⚔️</em></p>
+
+    <form>
+      <label for="ign">Minecraft IGN:</label>
+      <input type="text" id="ign" name="ign" required>
+
+      <label for="role">Preferred Role:</label>
+      <input type="text" id="role" name="role">
+
+      <label for="about">Tell us about yourself:</label>
+      <textarea id="about" name="about" rows="5" required></textarea>
+
+      <label for="experience">What experience do you have in Minecraft?</label>
+      <textarea id="experience" name="experience" rows="4"></textarea>
+
+      <label for="discord">Discord Username:</label>
+      <input type="text" id="discord" name="discord" required>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <div class="discord-btn">
+      <a href="https://discord.gg/QuXggxyzQk" target="_blank">Join Our Discord</a>
+    </div>
+  </section>
+</body>
+</html>
